@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamba UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100"">
+    
+    <div class="bg-white mt-5 mx-5 my-5 mx-auto max-w-6xl">   
+        <nav>
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+              <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="flex shrink-0 items-center">
+                    <img class="h-8 w-auto" src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+                  </div>
+                  <div class="hidden sm:flex sm:justify-end w-full">
+                    <div class="flex space-x-4 ">
+                      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-black-300 hover:bg-gray-700  hover:text-white" >Link</a>
+                      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-black-300 hover:bg-gray-700 hover:text-white ">Link</a>
+                      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-black-300 hover:bg-gray-700 hover:text-white">Link</a>
+                      <a href="#" class="rounded-md bg-violet-600 px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+             
+              </div>
+            </div>
+          
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="sm:hidden" id="mobile-menu">
+              <div class="space-y-1 px-2 pt-2 pb-3">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+              </div>
+            </div>
+          </nav>
+        </div> 
+    
+    
+        <section class="flex flex-col md:flex-row justify-center items-center bg-gray-50 mx-auto max-w-6xl h-screen">
+            <div class="bg-white p-8 shadow-md md:w-1/3 h-full flex flex-col justify-center">
+                <h2 class="text-purple-600 text-lg font-semibold text-center">Mamba design system</h2>
+                <h1 class="text-4xl font-bold mt-2 text-center">Build it with</h1>
+                <h1 class="text-4xl font-bold mt-2 text-center">Mamba</h1>
+                <p class="text-gray-600 mt-4"><strong>Modular and versatile.</strong> The ultimate design toolkit for savvy technology startups.</p>
+                <input type="text" placeholder="Your name" class="w-full p-2 border rounded mt-2">
+                <input type="email" placeholder="Email address" class="w-full p-2 border rounded mt-2">
+                <button class="w-full px-6 py-2 bg-purple-600 text-white rounded mt-4">Join the waitlist</button>
+            </div>
+            <div class="md:w-2/3 pl-4 h-full flex items-center">
+                <img src="https://picsum.photos/900/600.jpg" alt="Hero Image" class=" object-cover w-full h-full">
+            </div>
+        </section>
+        
+
+        <section class="text-center py-16">
+            <p class="text-purple-600 font-semibold uppercase">How it works</p>
+            <h3 class="text-3xl font-bold">Building with Mamba is simple</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 max-w-6xl mx-auto">
+                <div class="p-6 bg-white shadow  flex items-start flex-col">
+                    <span class="w-8 h-8 bg-purple-600 text-white font-bold rounded-full flex items-center justify-center mr-4">1</span>
+                    <p class="text-start"><strong>Nulla.</strong>Nostrum, corrupti blanditiis. Illum, architecto?</p>
+                </div>
+                <div class="p-6 bg-white shadow  flex items-start flex-col">
+                    <span class="w-8 h-8 bg-purple-600 text-white font-bold rounded-full flex items-center justify-center mr-4">2</span>
+                    <p class="text-start"><strong>Accusantium.</strong>Vitae saepe atque neque sunt eius dolor veniam alias debitis?</p>
+                </div>
+                <div class="p-6 bg-white shadow  flex items-start flex-col">
+                    <span class="w-8 h-8 bg-purple-600 text-white font-bold rounded-full flex items-center justify-center mr-4">3</span>
+                    <p class="text-start"><strong>Maxime.</strong>Expedita temporibus culpa reprehenderit doloribus consectetur odio!</p>
+                </div>
+            </div>
+        </section>
+    
+ 
+
+        <section class="flex flex-col md:flex-row justify-center items-stretch bg-gray-50 mx-auto max-w-6xl h-auto ">
+            <div class="md:w-1/2  flex items-center">
+                <img src="https://picsum.photos/900/600.jpg" alt="Hero Image" class="object-cover w-full h-full">
+            </div>
+            <div class="bg-white p-6 shadow object-cover w-full h-full ml-4">
+                <div class="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span class="text-xl font-semibold">✦</span>
+                </div>
+                <blockquote class="italic text-gray-700 w-full h-full text-center ">“Et, dignissimos obcaecati. Recusandae praesentium doloribus vitae? Rem unde atque mollitia!”</blockquote>
+                <p class="font-semibold mt-2 text-center">Leroy Jenkins</p>
+                <p class="text-gray-500 text-sm text-center">CEO of Company Co.</p>
+            </div>
+        </section>
+        
+        
+    
+    <!-- Blog Section -->
+    <section class="bg-white mt-5 mx-5 my-5 mx-auto max-w-6xl py-6"> 
+        <h3 class="text-3xl font-bold text-start ml-4">Create with us</h3>
+        <p class="text-gray-600 text-start my-4 ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, accusantium quis! Fugit, commodi placeat ipsum rerum fugiat porro eos dolorum quod consectetur provident deleniti quibusdam voluptate id architecto unde modi!</p>
+    </section>
+    <div class="flex flex-col md:flex-row justify-center items-stretch max-w-6xl mx-auto">
+        <div class="md:w-2/3 flex items-center">
+            <img src="https://picsum.photos/900/500.jpg" alt="Hero Image" class="object-cover w-full h-full">
+        </div>
+    
+        <div class="bg-white p-8 shadow-md md:w-1/3 flex flex-col w-full">
+            <!-- Buton ve Başlık (Üstte) -->
+            <div class="flex flex-col">
+                <button class="bg-purple-600 text-white rounded-full px-4 py-2 w-max">Business</button>
+                <h4 class="text-xl font-semibold mt-2">Curating a workplace that inspires team movement</h4>
+            </div>
+    
+            <!-- Paragraflar (En altta) -->
+            <div class="mt-auto">
+                <p class="text-gray-600 mt-5">November 30, 2020 - </p>
+                <p class="text-gray-600">By Leron Jenkins</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <section class="text-center py-16">
+    
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 max-w-6xl mx-auto ">
+            <div class="p-6 bg-white shadow  flex items-start flex-col">
+                <p class="text-start"><strong> Panel based blocks. </strong>Nostrum, corrupti blanditiis. Illum, architecto?</p>
+            </div>
+            <div class="p-6 bg-white shadow  flex items-start flex-col">
+                <p class="text-start"><strong>  Responsive design. </strong>Vitae saepe atque neque sunt eius dolor veniam alias debitis?</p>
+            </div>
+            <div class="p-6 bg-white shadow  flex items-start flex-col">
+                <p class="text-start"><strong>  Premium support. </strong>Expedita temporibus culpa reprehenderit doloribus consectetur odio!</p>
+            </div>
+        </div>
+    </section>
+    
+      
+    <!-- Team Section -->
+    <section class="flex flex-row md:flex-col justify-start items-center my-16 bg-gray-50 mx-auto max-w-6xl h-screen ">
+
+        <div class="max-w-5xl mx-auto mt-6 p-16 text-center">
+            <h3 class="text-3xl font-bold">Our team is here to help you.</h3>
+            <span>meet our crew ></span>
+        </div>
+        <div class="max-w-5xl mx-auto mt-6">
+            <img src="https://picsum.photos/1000/300.jpg" alt="Team Image" class="object-cover w-full h-full">
+        </div>
+        
+      
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-6 bg-white shadow mt-16 mx-auto max-w-6xl">
+        <div class="flex items-center justify-between">
+            <p class="mx-auto">   &copy; 2025 Mamba</p>
+            
+            <!-- İkonlar Sağda -->
+            <div class="flex space-x-4 ml-auto">
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
